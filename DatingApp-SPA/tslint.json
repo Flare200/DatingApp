@@ -4,7 +4,6 @@
     "no-string-literal":false,
     "align": {
       "options": [
-        "parameters",
         "statements"
       ]
     },
