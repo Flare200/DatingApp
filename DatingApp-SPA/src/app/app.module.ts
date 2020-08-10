@@ -32,6 +32,7 @@ import { AuthGuard } from './_guards/auth.guard';
 import { UserService } from './_services/user.service';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+import { TimeagoModule } from 'ngx-timeago';
 
 // tslint:disable-next-line: typedef
 export function tokenGetter() {
@@ -62,6 +63,7 @@ export function tokenGetter() {
       BsDropdownModule.forRoot(),
       BsDatepickerModule.forRoot(),
       TabsModule.forRoot(),
+      TimeagoModule.forRoot(),
       RouterModule.forRoot(appRoutes),
       NgxGalleryModule,
       FileUploadModule,
