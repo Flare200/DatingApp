@@ -1,6 +1,7 @@
 {
   "extends": "tslint:recommended",
   "rules": {
+    "prefer-for-of":false,
     "no-string-literal":false,
     "align": {
       "options": [
