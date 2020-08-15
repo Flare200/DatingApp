@@ -1,0 +1,74 @@
+<div >
+  <h1 class="text-center">Welcome To Elijah Ratner's Dating App!</h1>
+  <hr>
+
+  <h2>Overview and Main Features</h2>
+  <p class="lead">
+    The purpose of this project was to expand my skillset in ASP.NET Core and Angular and then showcase it to everyone!
+    You can find the source code for this project on my <a href="https://github.com/Flare200/DatingApp">Github</a>.
+    This dating app is fully functional and has many features such as:
+  </p>
+  <ul class="lead">
+    <li>Registering Users</li>
+    <li>Logging in via Token Authentication</li>
+    <li>Profile Customization</li>
+    <li>Photo Uploading</li>
+    <li>Paging, Sorting, and Filtering Users</li>
+    <li>Liking Other Users</li>
+    <li>Viewing Other Users' Profiles</li>
+    <li>Private Messaging</li>
+    <li>Deleting Messages</li>
+  </ul>
+
+  <h2>Languages, Tools and Third Party Libraries Used</h2>
+  <ul class="lead">
+    <li>Languages
+      <ul>
+        <li>API</li>
+          <ul>
+            <li>C#</li>
+          </ul>
+          <li>Angular</li>
+          <ul>
+            <li>HTML</li>
+            <li>Typescript</li>
+            <li>CSS</li>
+          </ul>
+      </ul>
+    </li>
+    <li>Tools</li>
+      <ul>
+        <li>Postman</li>
+        <li>Visual Studio Code</li>
+        <li>DB Browser for SQLite</li>
+        <li>Cloudinary</li>
+        <li>MySQL Server</li>
+      </ul>
+    <li>Third Party Libraries</li>
+      <ul>
+        <li>NGX Bootstrap</li>
+        <li>Bootswatch</li>
+        <li>Alertify</li>
+        <li>Timeago Pipe</li>
+        <li>Angular JWT</li>
+        <li>Auth0 JWT Module</li>
+        <li>NG2 File Upload</li>
+      </ul>
+  </ul>
+
+  <h2>The API</h2>
+  <p class="lead">
+    I created my own API and database using ASP.NET Core and Microsoft Entity Framework.  For the development build, the database was done in SQLite, while the production build has the database in MySQL.  There were controllers for the users, messages, photos, and the authentication which handled the HTTP get and post requests.  The main tables created for the database were for users, messages, photos, and likes.  The data for the first 10 users was seeded into the database so that the site would be somewhat populated.  The API utilizes asynchronous methods to get the information from the database and ensures that the program can continue to run without waiting for other methods to finish.  This makes for a more responsive UI and overall better performance in the application.
+  </p>
+
+  <h2>The Client Application</h2>
+  <p class="lead">
+    The client is made using the Angular framework.  It is a single page application that uses routing to change the pages.  Some pages have a route guard on them to prevent unauthorized users from accessing them as well as resolvers to get the user data before a route is activated.  There is a user service which initiates the HTTP requests to the API.  There is an auth service which deals with registering users, changing a user's photo, logging in a user, checking if the user is logged in, and caching the user's token into local storage.  The client is made up of multiple components, some of which have parent-child relationships where the Input properties pass the data down and the Output properties pass the data back up.
+  </p>
+
+  <h2>Final Remarks</h2> <p>(Please read)</p>
+  <p class="lead"> If you decided to read all that and you made it this far, thank you!  If you scrolled all the way down because you didn't want to read a huge wall of text with some jargon that might not have made sense to you, that's ok too!  I appreciate you taking the time to mess around with this application.  For those interested in seeing more of my work here is my <a href="https://github.com/Flare200/DatingApp">Github</a> again if you're interested.  Here is also my <a href="https://www.linkedin.com/in/elijah-ratner/">LinkedIn</a> if you're interested in seeing my past work experince.  I'm a motivated learner who is always willing to learn new things.  Anything I know already, I van refine with practice.  Anything I don't know I can pick up as I am a quick study.  Thank you again for looking at my app.  If you have any questions, feel free to email me at firebird567@cox.net.</p>
+
+
+  <button class="btn btn-lg btn-primary" type="button" (click)="cancel()">Go Back</button>
+</div>

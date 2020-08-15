@@ -38,6 +38,7 @@ import { TimeagoModule } from 'ngx-timeago';
 import { ListsResolver } from './_resolvers/lists.resolver';
 import { MessagesResolver } from './_resolvers/messages.resolver';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
+import { LearnMoreComponent } from './learn-more/learn-more.component';
 
 export function tokenGetter() {
    return localStorage.getItem('token');
@@ -56,7 +57,8 @@ export function tokenGetter() {
       MemberDetailComponent,
       MemberEditComponent,
       PhotoEditorComponent,
-      MemberMessagesComponent
+      MemberMessagesComponent,
+      LearnMoreComponent
    ],
    imports: [
       BrowserModule,

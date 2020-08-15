@@ -8,22 +8,28 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   registerMode = false;
+  learnMore = false;
 
   constructor(private http: HttpClient) { }
 
-  // tslint:disable-next-line: typedef
   ngOnInit() {
 
   }
 
-  // tslint:disable-next-line: typedef
   registerToggle() {
     this.registerMode = true;
   }
 
-  // tslint:disable-next-line: typedef
+  learnMoreToggle() {
+    this.learnMore = true;
+  }
+
   cancelRegisterMode(registerMode: boolean) {
     this.registerMode = registerMode;
+  }
+
+  cancelLearnMore(learnMore: boolean) {
+    this.learnMore = learnMore;
   }
 
 }
